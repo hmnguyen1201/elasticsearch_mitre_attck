@@ -1,0 +1,44 @@
+{
+  "mappings": {
+      "properties" : {
+        "threat" : {
+          "properties" : {
+            "framework" : {
+              "type" : "keyword"
+            },
+            "tactic" : {
+              "properties" : {
+                "id" : {
+                  "type" : "keyword"
+                },
+                "name" : {
+                  "type" : "keyword"
+                }
+              }
+            },
+            "technique" : {
+              "properties" : {
+                "id" : {
+                  "type" : "keyword"
+                },
+                "name" : {
+                  "type" : "keyword"
+                },
+                "subtechnique" : {
+                  "properties" : {
+                    "id" : {
+                      "type" : "keyword"
+                    },
+                    "name" : {
+                      "type" : "keyword"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+  "index_patterns": ["mitre_attck"]
+}
